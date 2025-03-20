@@ -1,0 +1,18 @@
+export default {
+    g_address: 'Major:Minor',
+    g_name: '基站名称',
+    create_time: '扫描时间',
+    b_address:  'IMEI号',
+    rssi:  'RSSI',
+    bt:'电池信息',
+    keys:"按键状态",
+    keys1:"按下",
+    keys2:"松开",
+    keys3:"不支持",
+    run:"运动状态",
+    onrun:"移动",
+    unrun:"静止",
+    mac_tip:"请输入查找信息",
+
+
+}
