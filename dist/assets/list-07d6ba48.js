@@ -1,0 +1,1 @@
+const e={g_address:"MAC",g_name:"MAC",create_time:"Create Time",b_address:"Map",rssi:"RSSI",bt:"Voltage",keys:"Button Status",run:"Motion State",onrun:"Move",unrun:"Static",mac_tip:"Please enter search information",keys1:"Press Down",keys2:"Loose",keys3:"Not Supported"};export{e as default};

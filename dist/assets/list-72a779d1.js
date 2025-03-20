@@ -1,0 +1,1 @@
+const e={mac:"MAC",create_time:"Create Time",map_name:"Map",state:"Online Status",type:"Bracelet Type",bt:"Voltage",sos:"SOS",mac_tip:"Please enter the unique MAC address of the tag",c1:"C1 Bracelet",x5:"X5 Bracelet",C2:"C2 Bracelet",heart_rate:"Heart Rate",steps:"Steps",spo:"SPO",temp:"Temperature",calorie:"calorie"};export{e as default};

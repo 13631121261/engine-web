@@ -1,0 +1,1 @@
+import{h as r,o as n,k as o,m as a,V as s}from"./vue-974988d6.js";import{_}from"./index-1515df1a.js";const p=r({__name:"price",props:{renderValue:{},renderRow:{},renderField:{},renderColumn:{},renderIndex:{}},setup(t){return(e,c)=>(n(),o("div",null,[a("span",null,s(e.renderRow.price),1)]))}});const i=_(p,[["__scopeId","data-v-c10bdba8"]]);export{i as default};

@@ -1,0 +1,1 @@
+function g(y,P,a,f){var I=0,l=a.length;if(l<3)return!1;for(var r=y,b=P,v,x,e=0;e<l;e++){var u=a[e].x/f,h=a[e].y/f;if(e==l-1?(v=a[0].x/f,x=a[0].y/f):(v=a[e+1].x/f,x=a[e+1].y/f),(r>=u&&r<v||r>=v&&r<u)&&Math.abs(u-v)>0){var c=h-(h-x)*(u-r)/(u-v);c<b&&(I+=1)}}return I%2!=0}export{g as I};

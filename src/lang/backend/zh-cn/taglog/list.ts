@@ -1,0 +1,18 @@
+export default {
+    g_address: '网关MAC',
+    g_name: '网关名称',
+    create_time: '扫描时间',
+    b_address:  '信标MAC',
+    rssi:  'RSSI',
+    bt:'电池信息',
+    keys:"按键状态",
+    keys1:"按下",
+    keys2:"松开",
+    keys3:"不支持",
+    run:"运动状态",
+    onrun:"移动",
+    unrun:"静止",
+    mac_tip:"请输入查找信息",
+
+
+}

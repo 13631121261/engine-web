@@ -1,0 +1,1 @@
+const e={address:"MAC",version:"版本",wifi_version:"WIFI版本",create_time:"创建时间",name:"网关名称",config_name:"关联配置",wifi_address:"WIFI MAC",x:"X轴坐标",y:"Y轴坐标",z:"Z轴坐标",map_name:"地图",ip:"IP",address_tip:"网关唯一蓝牙MAC地址",x_tip:"相对地图的X轴坐标值",y_tip:"相对地图的Y轴坐标值",more:"更多"};export{e as default};

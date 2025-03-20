@@ -1,0 +1,23 @@
+export default {
+    mac: 'MAC',
+    create_time: '创建时间',
+    map_name:  '地图',
+    state:  '在线状态',
+    isbind:'绑定状态',
+    device_sn:'资产SN码',
+    device_name:'资产名称',
+    type:'标签型号',
+    l_type:'定位类型',
+    bt:'电压',
+    bind:'已绑定',
+    unbind:'未绑定',
+    sos:"拆卸状态",
+    mount:"已安装",
+    unmount:"已拆下",
+    run:"运动状态",
+    onrun:"移动",
+    unrun:"静止",
+    mac_tip:"请输入信标唯一MAC地址",
+
+
+}
