@@ -27,22 +27,17 @@
                 >
 
                     <FormItem
-                        :label="t('aoa.list.mac')"
+                        :label="t('workcard.list.mac')"
                         v-model="baTable.form.items.mac"
                         type="string"
                         prop="mac"
-                        :placeholder="t('aoa.list.mac_tip')"
+                        :placeholder="t('workcard.list.mac_tip')"
                         :input-attr="{
                             clearable: true,
                             disabled: getDisable(),
                         }"
                     />
 
-                    <FormItem :label="t('aoa.list.type')"
-                              prop="type"
-                              type="select"
-                              v-model="baTable.form.items.type"
-                              :data="{ content: {'5': 'AOA'} }" />
 
                 </el-form>
             </div>
@@ -74,8 +69,8 @@ const baTable = inject('baTable') as baTableClass
 const { t } = useI18n()
 
 const rules: Partial<Record<string, FormItemRule[]>> = reactive({
-    mac: [buildValidatorData({ name: 'required', title: t('aoa.list.mac') }),buildValidatorData({ name: 'address'})],
-    type: [buildValidatorData({ name: 'required', title: t('aoa.list.type') })],
+    mac: [buildValidatorData({ name: 'required', title: t('workcard.list.mac') }),buildValidatorData({ name: 'address'})],
+    type: [buildValidatorData({ name: 'required', title: t('workcard.list.type') })],
 })
 
 function getDisable(){

@@ -28,9 +28,9 @@
 
                     <FormItem
                         :label="t('ofcat1.list.mac')"
-                        v-model="baTable.form.items.imei"
+                        v-model="baTable.form.items.mac"
                         type="string"
-                        prop="imei"
+                        prop="mac"
                         :placeholder="t('ofcat1.list.mac_tip')"
                         :input-attr="{
                             clearable: true,
@@ -70,7 +70,7 @@ const baTable = inject('baTable') as baTableClass
 const { t } = useI18n()
 
 const rules: Partial<Record<string, FormItemRule[]>> = reactive({
-    imei: [buildValidatorData({ name: 'required', title: t('ofcat1.list.mac') }),buildValidatorData({ name: 'varName'})],
+    mac: [buildValidatorData({ name: 'required', title: t('ofcat1.list.mac') }),buildValidatorData({ name: 'varName'})],
 })
 
 function getDisable(){

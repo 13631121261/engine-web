@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, provide } from 'vue'
+import { onMounted, ref, provide, onUnmounted } from 'vue'
 import baTableClass from '/@/utils/baTable'
 import { baTableApi } from '/@/api/common'
 import Table from '/@/components/table/index.vue'
@@ -75,13 +75,21 @@ const baTable: baTableClass = new baTableClass(new baTableApi('/userApi/Alarm/')
 } )
 
 provide('baTable', baTable)
-
+let timer;
 onMounted(() => {
     baTable.table.ref = tableRef.value
     baTable.mount()
     baTable.getIndex()
     console.log("sss="+baTable.table.ref)
     console.log(baTable.table.ref)
+
+
+    timer=setInterval(function(){
+        baTable.getIndex()
+    },5000)
+})
+onUnmounted(()=>{
+    clearInterval(timer)
 })
 function unbind(sn:string) {
     unBindTag(sn).then((res)=>{

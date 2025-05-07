@@ -12,6 +12,7 @@ export default {
     c1:"C1 Bracelet",
     x5:"X5 Bracelet",
     C2:"C2 Bracelet",
+    yt:"YT Bracelet",
     heart_rate:'Heart Rate',
     steps:'Steps',
     spo:"SPO",

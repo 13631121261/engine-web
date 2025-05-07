@@ -28,7 +28,7 @@ var floorId = null;
 var customertype = null;
 var w;
 var h;
-var imgWidth = 5;
+var imgWidth = 10;
 var GatewayMap=new Map()
 var AreaMap=new Map()
 var TagMap=new Map()
@@ -106,7 +106,7 @@ export function loadSVGData (data) {
     console.log("imgWidth = "+imgWidth )
     console.log("scale = "+scale )
    // imgWidth = 40 / scale;
-    imgWidth = w*0.00625
+  //  imgWidth = w*0.00625
     console.log("imgWidth = "+imgWidth )
 
 

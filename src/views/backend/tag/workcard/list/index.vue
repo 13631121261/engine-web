@@ -6,7 +6,7 @@
         <TableHeader
 
           :buttons="['refresh', 'add', 'edit', 'delete', 'quickSearch', 'columnDisplay','import','export']"
-            :quick-search-placeholder="t('Quick search placeholder', { fields: t('aoa.list.mac') })"
+            :quick-search-placeholder="t('Quick search placeholder', { fields: t('workcard.list.mac') })"
 
         />
 
@@ -41,14 +41,14 @@ const tableRef = ref()
 const { t } = useI18n()
 const adminInfo = useAdminInfo()
 
-const baTable: baTableClass = new baTableClass(new baTableApi('/userApi/AOA/'), {
+const baTable: baTableClass = new baTableClass(new baTableApi('/userApi/workcard/'), {
 
     dblClickNotEditColumn: ['all'],
     column: [
         { type: 'selection', align: 'center' },
-        { label: t('aoa.list.mac'), prop: 'mac', width: '150',align: 'center' },
+        { label: t('workcard.list.mac'), prop: 'mac', width: '150',align: 'center' },
         {
-            label: t('aoa.list.state'),
+            label: t('workcard.list.state'),
             prop: 'online',
             align: 'center',
             render: 'tag',
@@ -57,34 +57,26 @@ const baTable: baTableClass = new baTableClass(new baTableApi('/userApi/AOA/'), 
         },
 
         {
-            label: t('aoa.list.sos'),
+            label: t('workcard.list.sos'),
             prop: 'sos',
             align: 'center',
             render: 'tag',
             custom: { '-1': 'info', '1': 'danger' ,'0':'success'},
-            replaceValue: { '-1': '/', '1': t('aoa.list.unmount'), '0': t('aoa.list.mount') },
+            replaceValue: { '-1': '/', '1': t('workcard.list.unmount'), '0': t('workcard.list.mount') },
         },
         {
-            label: t('aoa.list.run'),
+            label: t('workcard.list.run'),
             prop: 'run',
             align: 'center',
             render: 'tag',
             custom: { '-1': 'info', '1': 'danger' ,'0':'success'},
-            replaceValue: { '-1': '/', '1': t('aoa.list.onrun'), '0': t('aoa.list.unrun') },
+            replaceValue: { '-1': '/', '1': t('workcard.list.onrun'), '0': t('workcard.list.unrun') },
         },
-        {
-            label: t('aoa.list.isbind'),
-            prop: 'isbind',
-            align: 'center',
-            render: 'tag',
-            custom: { '0': 'danger', '1': 'success' },
-            replaceValue: { '0': t('aoa.list.unbind'), '1': t('aoa.list.bind') },
-        },
-        { label: t('aoa.list.device_sn'), prop: 'device_sn', align: 'center', width: '160'},
-        { label: t('aoa.list.device_name'), prop: 'device_name', align: 'center', width: '160'},
 
-        {  label: t('aoa.list.bt'), prop: 'bt',render: 'customRender', customRender: markRaw(bt),width: '80',align: 'center',},
-        { label: t('Create time'), prop: 'createtime', align: 'center', width: '160', render: 'datetime' },
+
+
+        {  label: t('workcard.list.bt'), prop: 'bt',render: 'customRender', customRender: markRaw(bt),width: '80',align: 'center',},
+        { label: t('Create time'), prop: 'create_time', align: 'center', width: '160', render: 'datetime' },
         { label: t('last time'), prop: 'last_time', align: 'center', width: '160', render: 'datetime' },
         {
             label: t('Operate'),
@@ -96,7 +88,7 @@ const baTable: baTableClass = new baTableClass(new baTableApi('/userApi/AOA/'), 
     ],
 }, {
     defaultItems: {
-        status: '1',
+
     },
 } )
 

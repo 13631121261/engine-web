@@ -42,7 +42,7 @@
                               prop="type"
                               type="select"
                               v-model="baTable.form.items.type"
-                              :data="{ content: {'1': t('bracelet.list.C2')} }" />
+                              :data="{ content: {'1': t('bracelet.list.C2'),'2': t('bracelet.list.yt')} }" />
 
                 </el-form>
             </div>

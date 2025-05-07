@@ -6,7 +6,7 @@ export default {
     isbind:'绑定状态',
     device_sn:'资产SN码',
     device_name:'资产名称',
-    type:'标签型号',
+    type:'协议类型',
     l_type:'定位类型',
     bt:'电压',
     bind:'已绑定',

@@ -42,7 +42,7 @@
                               prop="type"
                               type="select"
                               v-model="baTable.form.items.type"
-                              :data="{ content: { 'KTBB818KA-3': 'KTBB818-KA(3)','KTBB818-2': 'KTBB818(2)','KTBB835-1': 'KTBB835(1)','KTBB823-1': 'KTBB823(1)'} }" />
+                              :data="{ content: { 'P0001-3': 'P0001-3','P0001-2': 'P0001-2','P0001-1': 'P0001-1','P0004-4': 'PD10004'} }" />
 
 
                 <FormItem :label="t('beacon.list.l_type')"

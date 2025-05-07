@@ -75,9 +75,7 @@ const baTable: baTableClass = new baTableClass(new baTableApi('/userApi/fwordcar
         },
     ],
 }, {
-    defaultItems: {
-        status: '1',
-    },
+
 } )
 
 provide('baTable', baTable)

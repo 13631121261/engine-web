@@ -11,6 +11,7 @@ export default {
     C1:"C1手环",
     x5:"X5手环",
     C2:"C2手环",
+    yt:"YT手环",
     heart_rate:'心率',
     steps:'计步',
     spo:"血氧",

@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { nextTick, onMounted, provide } from 'vue'
+import { nextTick, onMounted, onUnmounted, provide } from 'vue'
 import baTableClass from '/@/utils/baTable'
 import PopupForm from './popupForm.vue'
 import info from './info.vue'
@@ -163,12 +163,20 @@ const baTable = new baTableClass(
 
 )
 
-
+let timer;
 provide('baTable', baTable)
 
 baTable.mount()
 baTable.getIndex()
+onMounted(()=>{
+    timer=setInterval(function(){
+        baTable.getIndex()
+    },3000)
 
+})
+onUnmounted(()=>{
+    clearInterval(timer)
+})
 
 
 </script>

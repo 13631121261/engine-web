@@ -6,7 +6,7 @@ export default {
     isbind:'Bind State',
     device_sn:'Asset Sn',
     device_name:'Asset Name',
-    type:'Tag Type',
+    type:'Protocol Type',
     l_type:'Positioning type',
     bt:'Voltage',
     bind:'Bound',
